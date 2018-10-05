@@ -5,6 +5,8 @@ In this lab, you'll get to do your first real data science project! You'll use J
 
 Don't worry if it feels like a lot or you get confused on this lab. Our goal here is just to give you a taste of what you'll be able to do as a data scientist, and after this lab, we'll go back and re-introduce all of the concepts that we skimmed over this time through, so by the end of the section you should have a much stronger understanding of this - even if you have no previous experience of programming.
 
+Don't worry about running tests for this lab. Just take your time to explore the data and the code.
+
 ## Objectives
 You will be able to:
 * Code along (following detailed instructions) to import a csv file and then plot the data
