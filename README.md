@@ -1,4 +1,6 @@
 
+# Your First Data Science Project!
+
 ## Introduction
 
 In this lab, you'll get to do your first real data science project! You'll use Jupyter Notebook to import pre-written libraries, you'll import data into your notebook from a Comma Seperated Values file (a .csv file) and you'll even get to create some plots!
