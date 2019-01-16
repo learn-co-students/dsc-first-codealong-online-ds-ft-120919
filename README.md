@@ -1,13 +1,13 @@
 
-# Your First Data Science Project!
+# Your First Data Science Codealong!
 
 ## Introduction
 
-In this lab, you'll get to do your first real data science project! You'll use Jupyter Notebook to import pre-written libraries, you'll import data into your notebook from a Comma Seperated Values file (a .csv file) and you'll even get to create some plots!
+In this codealong, you'll get to do your first taste of a real data science workflow! You'll use Jupyter Notebook to import pre-written libraries, import data into your notebook from a Comma Seperated Values file (a .csv file) and you'll even get to create some plots!
 
-Don't worry if it feels like a lot or you get confused on this lab. Our goal here is just to give you a taste of what you'll be able to do as a data scientist, and after this lab, we'll go back and re-introduce all of the concepts that we skimmed over this time through, so by the end of the section you should have a much stronger understanding of this - even if you have no previous experience of programming.
+Don't worry if it feels like a lot or you get confused on this codealogn. Our goal here is just to give you a taste of what you'll be able to do as a data scientist, and afterwards, we'll go back and re-introduce all of the concepts that we skimmed over this time through, so by the end of the section you should have a much stronger understanding of this - even if you have no previous experience of programming.
 
-Don't worry about running tests for this lab. Just take your time to explore the data and the code.
+Don't worry about running tests for this notebook. Just take your time to explore the data and the code.
 
 ## Objectives
 You will be able to:
@@ -503,31 +503,6 @@ df.play_star_rating.value_counts? #Read the docstring and tinker! See how it wor
 #Keep tinkering!
 ```
 
-# Practice questions
-
-It's time to put a little bit of this into practice.
-
-## 1. What are the 5 most common theme names?
-
-
-```python
-#Your code/answer here
-```
-
-## 2. What was the average lego set price?
-
-
-```python
-#Your code/answer here
-```
-
-## 3. Which set do you think is the most popular?
-
-
-```python
-#Your code/answer here
-```
-
 # Graphing
 
 Our bread and butter tool for graphing in python will be **matplotlib**. 
@@ -556,7 +531,7 @@ to_graph.plot(kind='barh')
 
 
 
-![png](index_files/index_47_1.png)
+![png](index_files/index_40_1.png)
 
 
 # Adding labels
@@ -585,7 +560,7 @@ plt.ylabel('Theme') #you could also rotate text if you wanted
 
 
 
-![png](index_files/index_49_1.png)
+![png](index_files/index_42_1.png)
 
 
 # Practice and Explore
@@ -605,7 +580,7 @@ plt.scatter(df.play_star_rating, df.star_rating)
 
 
 
-![png](index_files/index_51_1.png)
+![png](index_files/index_44_1.png)
 
 
 
@@ -621,7 +596,7 @@ df.play_star_rating.hist()
 
 
 
-![png](index_files/index_52_1.png)
+![png](index_files/index_45_1.png)
 
 
 
