@@ -277,7 +277,7 @@ pd.read_csv() #Move your cursor inside the parentheses and press shift+tab
 The other thing that happened in our block of code above was that we defined a **variable**.  
 
 This happened in the first line of code:  
-```df = pd.read_csv('causes_of_death_cleaned.csv')```
+```df = pd.read_csv('lego_sets.csv')```
 
 As we saw, we used the built in *read_csv* method from the *pandas* package which we imported under the *alias* *pd*.  
 
