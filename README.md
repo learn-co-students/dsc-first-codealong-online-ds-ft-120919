@@ -35,14 +35,14 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 ```
 
-# Jupyter Notebook Cell Types
+## Jupyter Notebook Cell Types
 
 You might have started to notice that the code blocks have little notes that say **In [ ]:** before you run them, and then are filled with a number after you run them. This is important, as it tells you what order cell blocks were run. (Which can sometimes affect how a program runs.)
 
 You may also notice that other cell blocks, such as this one, do not have the **In [ ]:** label as with the code blocks. This is because this cell block is formatted as **Markdown** rather then code. You can see (and change) what type of cell is by clicking the dropdown menu at the top:
 <img src="images/jupyter_notebook_cell_type_dropdown.png" width="750">
 
-# Command Versus Edit Mode
+## Command Versus Edit Mode
 
 You should also start to notice that when you are in a cell writing code (or notes), the cell is highlighted in **green** meaning you are in **edit mode**. 
 
@@ -59,7 +59,7 @@ You can also see a full list of shortcuts available in command and edit mode und
 
 <img src="images/jupyter_help_menu.png" width="800">
 
-# Running Bash Commands
+## Running Bash Commands
 
 We can also run bash commands just as we did before from the terminal directly within iPython notebooks!  
  (Note: bash commands cannot be mixed with python and must be in their own cell block.)   
@@ -218,13 +218,13 @@ df.head() #Uses a built in method common to all Pandas Dataframes
 
 
 
-# Python Comments
+## Python Comments
 
 Note the green text following the **#**.  
 Anything following a **#** in python is a comment and will not actually execute.  
 This is a useful feature for annotating your code with notes for yourself and other later so that your code is easy to read.
 
-# Accessing Methods from Packages and Objects
+## Accessing Methods from Packages and Objects
 
 A little more theory and context:
 
@@ -257,7 +257,7 @@ pd.
 You can also start typing to subset the list of available commands:
 <img src="images/pd_read_methods.png" width="500">
 
-# Pulling up Docstrings
+## Pulling up Docstrings
 
 Even better, you can even see how a method works by pulling up its **docstring**!  
 You can do this by writing **?** after the method and running the cell.
@@ -280,7 +280,7 @@ Alternatively, you can pull up a preview of the docstring by pressing **shift+ta
 pd.read_csv() #Move your cursor inside the parentheses and press shift+tab
 ```
 
-# Variables
+## Variables
 
 The other thing that happened in our block of code above was that we defined a **variable**.  
 
@@ -293,7 +293,7 @@ The output of this method was then assigned to the variable *df*. This is the st
 
 `variable_name = what_to_stor_in_the_variable`
 
-# Built in Python Functions
+## Built-in Python Functions
 
 We also used two built in python functions:  
     * len() #Returns the lenght of an object
@@ -310,7 +310,7 @@ You can also check what type of object something is using the built in **type()*
 type(df)
 ```
 
-# Common DataFrame Methods
+## Common DataFrame Methods
 As you can see, our variable **df** is a DataFrame object (which is part of the Pandas core package). Here's some other common methods you will want to become familiar with when working with Pandas dataframes:  
 * df.head() 
     * Preview the first 5 rows of a dataframe. Pass a number for more/less rows
@@ -332,7 +332,7 @@ As you can see, our variable **df** is a DataFrame object (which is part of the 
 #Pull up their docstrings and investigate what they do.
 ```
 
-# Pandas Series
+## Pandas Series
 
 While the entire spreadsheet is called a **dataframe**, each individual column is known as a **series**. You can access a specific column of a pandas dataframe one of two ways:  
 
@@ -468,7 +468,7 @@ df.ages[:5] #Here we introduce another new syntax the list slice [:5] this limit
 
 
 
-# List and Series Slices
+## List and Series Slices
 Above, we introduced an entirely new programming pattern called a slice.  
 The syntax for a slice is `[start:end]`.   
 
@@ -484,7 +484,7 @@ While we could have also used `df.State.head()`, slicing works for many more dat
 df.piece_count.
 ```
 
-# Common Series Methods
+## Common Series Methods
 Some very useful series methods include:  
 * df.col_name.value_counts()
 * df.col_name.astype()
@@ -511,7 +511,7 @@ df.play_star_rating.value_counts? #Read the docstring and tinker! See how it wor
 #Keep tinkering!
 ```
 
-# Graphing
+## Graphing
 
 Our bread and butter tool for graphing in python will be **matplotlib**. 
 There are a number of other packages you can also check out for visualization later on such as plotly, folium, and bokeh to name a few, but matplotlib is an industry standard used widely. As with the pandas package, we must import  the matplotlib package to use its built in functions and methods. Rather then import the entire package however, we import only the piece we intend to use (hence the dot notation) and again alias this under the shorthand *plt*. Finally, the iPython magic command **% matplotlib inline** makes these graphs appear within our jupyter notebook.
@@ -542,7 +542,7 @@ to_graph.plot(kind='barh')
 ![png](index_files/index_40_1.png)
 
 
-# Adding labels
+## Adding labels
 The graph above is a good start, but we should be sure to add some labels! To do this we make successive calls to the `plt` package we imported. Some common methods you should be familiar with include:  
 * plt.title()
 * plt.xlabel()
@@ -571,7 +571,7 @@ plt.ylabel('Theme') #you could also rotate text if you wanted
 ![png](index_files/index_42_1.png)
 
 
-# Practice and Explore
+## Practice and Explore
 
 Take a minute to try chaining some of these methods together to create a few of your own visuals for practice. Some ideas can include making a scatter plot with `plt.scatter(x , y)` where you pass in two series (one as x and the other as y), plotting histograms with the `series.hist()` method, or creating simple bar graphs as shown above.
 
