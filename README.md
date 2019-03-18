@@ -86,138 +86,6 @@ print(len(df)) #Prints the length of the dataframe
 df.head() #Uses a built in method common to all Pandas Dataframes
 ```
 
-    12261
-
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>ages</th>
-      <th>list_price</th>
-      <th>num_reviews</th>
-      <th>piece_count</th>
-      <th>play_star_rating</th>
-      <th>prod_desc</th>
-      <th>prod_id</th>
-      <th>prod_long_desc</th>
-      <th>review_difficulty</th>
-      <th>set_name</th>
-      <th>star_rating</th>
-      <th>theme_name</th>
-      <th>val_star_rating</th>
-      <th>country</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>6-12</td>
-      <td>29.99</td>
-      <td>2.0</td>
-      <td>277.0</td>
-      <td>4.0</td>
-      <td>Catapult into action and take back the eggs fr...</td>
-      <td>75823.0</td>
-      <td>Use the staircase catapult to launch Red into ...</td>
-      <td>Average</td>
-      <td>Bird Island Egg Heist</td>
-      <td>4.5</td>
-      <td>Angry Birds™</td>
-      <td>4.0</td>
-      <td>US</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>6-12</td>
-      <td>19.99</td>
-      <td>2.0</td>
-      <td>168.0</td>
-      <td>4.0</td>
-      <td>Launch a flying attack and rescue the eggs fro...</td>
-      <td>75822.0</td>
-      <td>Pilot Pig has taken off from Bird Island with ...</td>
-      <td>Easy</td>
-      <td>Piggy Plane Attack</td>
-      <td>5.0</td>
-      <td>Angry Birds™</td>
-      <td>4.0</td>
-      <td>US</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>6-12</td>
-      <td>12.99</td>
-      <td>11.0</td>
-      <td>74.0</td>
-      <td>4.3</td>
-      <td>Chase the piggy with lightning-fast Chuck and ...</td>
-      <td>75821.0</td>
-      <td>Pitch speedy bird Chuck against the Piggy Car....</td>
-      <td>Easy</td>
-      <td>Piggy Car Escape</td>
-      <td>4.3</td>
-      <td>Angry Birds™</td>
-      <td>4.1</td>
-      <td>US</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>12+</td>
-      <td>99.99</td>
-      <td>23.0</td>
-      <td>1032.0</td>
-      <td>3.6</td>
-      <td>Explore the architecture of the United States ...</td>
-      <td>21030.0</td>
-      <td>Discover the architectural secrets of the icon...</td>
-      <td>Average</td>
-      <td>United States Capitol Building</td>
-      <td>4.6</td>
-      <td>Architecture</td>
-      <td>4.3</td>
-      <td>US</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>12+</td>
-      <td>79.99</td>
-      <td>14.0</td>
-      <td>744.0</td>
-      <td>3.2</td>
-      <td>Recreate the Solomon R. Guggenheim Museum® wit...</td>
-      <td>21035.0</td>
-      <td>Discover the architectural secrets of Frank Ll...</td>
-      <td>Challenging</td>
-      <td>Solomon R. Guggenheim Museum®</td>
-      <td>4.6</td>
-      <td>Architecture</td>
-      <td>4.1</td>
-      <td>US</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
 ## Python Comments
 
 Note the green text following the **#**.  
@@ -245,14 +113,6 @@ This also demonstrates the **dot notation** in python, which is how we access bu
 ```python
 pd.
 ```
-
-
-      File "<ipython-input-1-bc888235687a>", line 1
-        pd.
-           ^
-    SyntaxError: invalid syntax
-
-
 
 You can also start typing to subset the list of available commands:
 <img src="images/pd_read_methods.png" width="500">
@@ -357,116 +217,14 @@ df.head(2) #preview your spreadsheet again; 2 keeps it a nice small preview
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>ages</th>
-      <th>list_price</th>
-      <th>num_reviews</th>
-      <th>piece_count</th>
-      <th>play_star_rating</th>
-      <th>prod_desc</th>
-      <th>prod_id</th>
-      <th>prod_long_desc</th>
-      <th>review_difficulty</th>
-      <th>set_name</th>
-      <th>star_rating</th>
-      <th>theme_name</th>
-      <th>val_star_rating</th>
-      <th>country</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>6-12</td>
-      <td>29.99</td>
-      <td>2.0</td>
-      <td>277.0</td>
-      <td>4.0</td>
-      <td>Catapult into action and take back the eggs fr...</td>
-      <td>75823.0</td>
-      <td>Use the staircase catapult to launch Red into ...</td>
-      <td>Average</td>
-      <td>Bird Island Egg Heist</td>
-      <td>4.5</td>
-      <td>Angry Birds™</td>
-      <td>4.0</td>
-      <td>US</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>6-12</td>
-      <td>19.99</td>
-      <td>2.0</td>
-      <td>168.0</td>
-      <td>4.0</td>
-      <td>Launch a flying attack and rescue the eggs fro...</td>
-      <td>75822.0</td>
-      <td>Pilot Pig has taken off from Bird Island with ...</td>
-      <td>Easy</td>
-      <td>Piggy Plane Attack</td>
-      <td>5.0</td>
-      <td>Angry Birds™</td>
-      <td>4.0</td>
-      <td>US</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
 ```python
 df.ages.head()
 ```
 
 
-
-
-    0    6-12
-    1    6-12
-    2    6-12
-    3     12+
-    4     12+
-    Name: ages, dtype: object
-
-
-
-
 ```python
 df.ages[:5] #Here we introduce another new syntax the list slice [:5] this limits us to the first 5 items
 ```
-
-
-
-
-    0    6-12
-    1    6-12
-    2    6-12
-    3     12+
-    4     12+
-    Name: ages, dtype: object
-
-
 
 ## List and Series Slices
 Above, we introduced an entirely new programming pattern called a slice.  
@@ -531,17 +289,6 @@ to_graph = df.theme_name.value_counts()[:5]
 to_graph.plot(kind='barh')
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1135c9dd8>
-
-
-
-
-![png](index_files/index_40_1.png)
-
-
 ## Adding labels
 The graph above is a good start, but we should be sure to add some labels! To do this we make successive calls to the `plt` package we imported. Some common methods you should be familiar with include:  
 * plt.title()
@@ -560,17 +307,6 @@ plt.xlabel('Number of Lego Sets') #you could also pass in fontsize if you wanted
 plt.ylabel('Theme') #you could also rotate text if you wanted
 ```
 
-
-
-
-    Text(0,0.5,'Theme')
-
-
-
-
-![png](index_files/index_42_1.png)
-
-
 ## Practice and Explore
 
 Take a minute to try chaining some of these methods together to create a few of your own visuals for practice. Some ideas can include making a scatter plot with `plt.scatter(x , y)` where you pass in two series (one as x and the other as y), plotting histograms with the `series.hist()` method, or creating simple bar graphs as shown above.
@@ -581,31 +317,9 @@ plt.scatter(df.play_star_rating, df.star_rating)
 ```
 
 
-
-
-    <matplotlib.collections.PathCollection at 0x113ad3898>
-
-
-
-
-![png](index_files/index_44_1.png)
-
-
-
 ```python
 df.play_star_rating.hist()
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x11383ad30>
-
-
-
-
-![png](index_files/index_45_1.png)
-
 
 
 ```python
