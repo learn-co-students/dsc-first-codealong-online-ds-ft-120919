@@ -40,7 +40,7 @@ import matplotlib.pyplot as plt
 You might have started to notice that the code blocks have little notes that say **In [ ]:** before you run them, and then are filled with a number after you run them. This is important, as it tells you what order cell blocks were run. (Which can sometimes affect how a program runs.)
 
 You may also notice that other cell blocks, such as this one, do not have the **In [ ]:** label as with the code blocks. This is because this cell block is formatted as **Markdown** rather then code. You can see (and change) what type of cell is by clicking the dropdown menu at the top:
-<img src="Jupyter_Notebook_Cell_Type_Dropdown.png" width=600>
+<img src="images/jupyter_notebook_cell_type_dropdown.png" width="750">
 
 # Command Versus Edit Mode
 
@@ -54,10 +54,10 @@ To enter edit mode from command mode simply hit enter, or double click on a cell
 
 ### Command Mode
 In command mode, you can delete cells, add cells, copy cells, paste cells, change cell types, and more. You can also do these tasks in a more cumbersome (and time consuming) manner by using the various headers in the menu bar at top.
-<img src="Jupyter_Menu.png" width=600>
+<img src="images/jupyter_menu.png" width="800">
 You can also see a full list of shortcuts available in command and edit mode under the help menu.
 
-<img src="Jupyter_Help_Menu.png" width=600>
+<img src="images/jupyter_help_menu.png" width="800">
 
 # Running Bash Commands
 
@@ -239,22 +239,30 @@ This also demonstrates the **dot notation** in python, which is how we access bu
 * In the cell below, navigate your cursor to the right of **pd.**
 * Press tab to see a list of available methods/attributes
 
-<img src="pd_methods.png" width=600>
+<img src="images/pd_methods.png" width="600">
 
 
 ```python
 pd.
 ```
 
+
+      File "<ipython-input-1-bc888235687a>", line 1
+        pd.
+           ^
+    SyntaxError: invalid syntax
+
+
+
 You can also start typing to subset the list of available commands:
-<img src="pd_read_methods.png" width=600>
+<img src="images/pd_read_methods.png" width="500">
 
 # Pulling up Docstrings
 
 Even better, you can even see how a method works by pulling up its **docstring**!  
 You can do this by writing **?** after the method and running the cell.
 
-<img src="docstring.png" width=500> 
+<img src="images/docstring.png" width="800"> 
 
 
 Try it out!
@@ -265,7 +273,7 @@ pd.read_csv?
 ```
 
 Alternatively, you can pull up a preview of the docstring by pressing **shift+tab within the parentheses of a method**
-<img src="docstring_preview.png" width=500>
+<img src="images/docstring_preview.png" width="800">
 
 
 ```python
@@ -293,7 +301,7 @@ We also used two built in python functions:
 In general, **python has reserved keywords** for built in functions like this. 
 **Be sure to not name your variables any of these!**
 
-<img src="python_built_in_functions.png" width=600>
+<img src="images/python_built_in_functions.png" width="700">
 
 You can also check what type of object something is using the built in **type()** method. This can be useful when determining how to work with an object that you are unfamiliar with.
 
@@ -603,3 +611,7 @@ df.play_star_rating.hist()
 ```python
 #Your code here
 ```
+
+## Summary
+
+Congratulations, you made it through your first real data science workflow!
