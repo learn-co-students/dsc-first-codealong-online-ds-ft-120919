@@ -257,11 +257,16 @@ Some very useful series methods include:
 * series.sort_values()
 
 There are also many more but this is a very good starting point.
-Start pulling up some docstrings and getting acquainted with reading them yourself before we go through a few of these methods together.
+Start pulling up some docstrings (using shift+tab within parentheses!) and getting acquainted with reading them yourself before we go through a few of these methods together.
 
 
 ```python
-df.play_star_rating.value_counts? #Read the docstring and tinker! See how it works.
+df.play_star_rating.value_counts() #Read the docstring and tinker! See how it works.
+```
+
+
+```python
+docstring by pressing shift+tab within the parentheses of a method
 ```
 
 
