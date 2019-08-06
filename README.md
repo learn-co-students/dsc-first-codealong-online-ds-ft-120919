@@ -3,11 +3,11 @@
 
 ## Introduction
 
-In this codealong, you'll get to do your first taste of a real data science workflow! You'll use Jupyter Notebook to import pre-written libraries, import data into your notebook from a Comma Seperated Values file (a .csv file) and you'll even get to create some plots!
+In this codealong, you'll get your first taste of a real data science workflow! You'll use Jupyter Notebook to import pre-written packages, import data into your notebook from a Comma Seperated Values file (a .csv file), and you'll even get to create some plots!
 
-Don't worry if it feels like a lot or you get confused on this codealong. Our goal here is just to give you a taste of what you'll be able to do as a data scientist, and afterwards, we'll go back and re-introduce all of the concepts that we skimmed over this time through, so by the end of the section you should have a much stronger understanding of this - even if you have no previous experience of programming.
+Don't worry if some of these terms are unfamiliar or you get confused on this codealong. Our goal here is just to give you a taste of what you'll be able to do as a data scientist, and afterwards, we'll go back and re-introduce all of the concepts that we skimmed over this time through. By the end of the section, you should have a much stronger understanding of this process - even if you have no previous programming experience.
 
-Don't worry about running tests for this notebook. Just take your time to explore the data and the code.
+Just take your time to explore the data and the code!
 
 ## Objectives
 You will be able to:
@@ -23,8 +23,10 @@ Juptyer Notebooks (historically called IPython Notebooks) will be our primary to
 print('This is code being run.')
 ```
 
+As you can see, running the code above printed text to the screen. You will learn later that ```print``` is an example of a "function". Functions are blocks of reusable code that execute a particular task. When functions are associated with a specific object they are called "methods." Don't worry about the details right now, you will learn more about functions and methods later.
+
 ## Importing Packages
-The next thing we're going to do is load in some python packages that will be part of our toolbox for manipulating and analyzing data. The standard python package for working with data tables is called **pandas**. Below, we import this under the **alias** pd, which is the industry standard. This will give us a shorthand way to access special functions and methods within the package without having to type the longer name pandas. 
+The next thing we're going to do is load in some python packages that will be part of our toolbox for manipulating and analyzing data. Again, don't worry if you are not sure what a python package is. For now, just think of packages as collections of specialized tools for performing specific tasks. The standard python package for working with data tables is called **pandas**. Below, we import this under the **alias** pd, which is the industry standard. This will give us a shorthand way to access special functions and methods within the package without having to type the longer name pandas. Similarly, we will also import a specialized package for plotting data called **matplotlib** under the alias plt. Pandas and matplotlib will be introduced in detail later. 
 
 * Again, press **shift+enter** to run the code below
 
@@ -39,7 +41,7 @@ import matplotlib.pyplot as plt
 
 You might have started to notice that the code blocks have little notes that say **In [ ]:** before you run them, and then are filled with a number after you run them. This is important, as it tells you what order cell blocks were run. (Which can sometimes affect how a program runs.)
 
-You may also notice that other cell blocks, such as this one, do not have the **In [ ]:** label as with the code blocks. This is because this cell block is formatted as **Markdown** rather then code. You can see (and change) what type of cell is by clicking the dropdown menu at the top:
+You may also notice that other cell blocks, such as this one, do not have the **In [ ]:** label as with the code blocks. This is because this cell block is formatted as **Markdown** rather then code. The details of Markdown are not important here but just know you can use markdown cell blocks to display text. They are really useful for embedding notes and explanations in your Jupyter Notebook. You can see (and change) what type of cell is by clicking the dropdown menu at the top:
 <img src="images/jupyter_notebook_cell_type_dropdown.png" width="750">
 
 
@@ -54,7 +56,7 @@ You should also start to notice that when you are in a cell writing code (or not
 Alternatively, if you **press esc**, the cursor will be in **blue** inidicating that you are in **command mode**.
 
 ### Edit Mode
-Edit mode is the standard mode for editing cells, whether its writing code or notes.
+Edit mode is the standard mode for editing cells, whether it's writing code or notes.
 To enter edit mode from command mode simply hit enter, or double click on a cell.
 
 ### Command Mode
@@ -66,7 +68,7 @@ You can also see a full list of shortcuts available in command and edit mode und
 
 ## Running Bash Commands
 
-We can also run bash commands just as we did before from the terminal directly within iPython notebooks!  
+We can also run bash commands just as we did before from the terminal directly within Jupyter Notebooks!  
  (Note: bash commands cannot be mixed with python and must be in their own cell block.)   
  
 Try it out!
@@ -82,7 +84,7 @@ ls
 ```
 
 ## Loading a DataFrame
-The primary datatype within the pandas package is called a dataframe and is similar to a spreadsheet in excel. Here's a brief example of loading a csv file from your hard drive:
+Now that you've seen how to navigate Jupyter Notebook cells, you're ready to work with some data. The primary datatype within the pandas package is called a dataframe and is similar to a spreadsheet in excel. Here's a brief example illustrating how to read a csv file from your hard drive and store its contents in a dataframe:
 
 
 ```python
@@ -101,11 +103,11 @@ This is a useful feature for annotating your code with notes for yourself and ot
 
 A little more theory and context:
 
-When we loaded in packages on our first cell block (import pandas as pd), we loaded code into memory. That code included functions, variables and other objects. Collectively, all of these items is loaded under the package name or alias.  
+When we loaded in packages on our first cell block (import pandas as pd), we loaded code into memory. That code included functions, variables, and other objects. Collectively, all of these items are loaded under the package name or alias.  
 
 We demonstrated this when we used the **pd.read_csv()** method above.  
 
-This also demonstrates the **dot notation** in python, which is how we access built in methods or attriubtes of a given object. Similar to what we saw with bash in the command line, we can also use **tab completion** to preview methods available in packages or other objects.  
+This also demonstrates the **dot notation** in python, which is how we access built in methods or attributes of a given object. Similar to what we saw with bash in the command line, we can also use **tab completion** to preview methods available in packages or other objects.  
 
 ### Try this out yourself
 
@@ -207,9 +209,9 @@ or
 
 ```df.col_name```
 
-First note that in `df['col_name']` we need 'quotations' around the column name. The quotations denote the column name is a **string**, python's built in variable type for storing text. This can alternatively be replaced with double quotes `df["col_name"]`. In general, anything in quotations is a string in python code. Occassionally, with very ill formatted column names with quotations in the names themselves, you may even need to wrap a name in triple quotes `df["""col_name"""]` . This will rarely happen in this particular context, but is also the general pattern for dealing with messy strings.   
+First note that in `df['col_name']` we need 'quotations' around the column name. The quotations denote the column name is a **string**, python's built in variable type for storing text. This can alternatively be replaced with double quotes `df["col_name"]`. In general, anything in quotations is a string in python code. Occasionally, with very ill formatted column names with quotations in the names themselves, you may even need to wrap a name in triple quotes `df["""col_name"""]` . This will rarely happen in this particular context, but it's the general pattern for dealing with messy strings.   
 
-Note that the second method, `df.col_name`, will only work if there are no spaces within the name of the column. Similarly to tab completion with the command line, this is a primary reason why programers use dashes (-) and underscores (_) in lieu of whitespace in their variable and file names. Also note that no quotations are used when using this format. (The column names have been stored as attributes to the DataFrame object!)
+Note that the second method, `df.col_name`, will only work if there are no spaces within the name of the column. Similar to tab completion with the command line, this is a primary reason why programmers use dashes (-) and underscores (_) in lieu of whitespace in their variable and file names. Also note that no quotations are used when using this format. (The column names have been stored as attributes of the DataFrame object!)
 
 
 ```python
@@ -232,7 +234,7 @@ df.ages[:5] #Here we introduce another new syntax the list slice [:5] this limit
 ```
 
 ## List and Series Slices
-Above, we introduced an entirely new programming pattern called a slice.  
+Above, we introduced an entirely new programming pattern called a slice which subsets the data into smaller pieces.  
 The syntax for a slice is `[start:end]`.   
 
 You can also pass an additional third parameter `[start:end:count_by]` which will allow you to:  
@@ -240,7 +242,7 @@ count every other: `[start:end:2]`
 count backwards: `start:end:-1]`  
 or potentially much more cryptic patterns, depending on what you pass.  
 
-While we could have also used `df.State.head()`, slicing works for many more datatypes. This includes the previously mentioned *strings* as well as **lists** and other iterable objects. **Series**, the columns of the pandas DataFrame are similar to python's built in *lists*, but also have additional *methods* built in to them that we will continue to investigate.
+While we could have also used `df.State.head()`, slicing works for many more datatypes. This includes the previously mentioned *strings* as well as **lists** and other iterable objects. **Series**, the columns of the pandas DataFrame, are similar to python's built in *lists*, but also have additional *methods* built in to them that we will continue to investigate.
 
 
 ```python
@@ -282,7 +284,7 @@ docstring by pressing shift+tab within the parentheses of a method
 ## Graphing
 
 Our bread and butter tool for graphing in python will be **matplotlib**. 
-There are a number of other packages you can also check out for visualization later on such as plotly, folium, and bokeh to name a few, but matplotlib is an industry standard used widely. As with the pandas package, we must import  the matplotlib package to use its built in functions and methods. Rather then import the entire package however, we import only the piece we intend to use (hence the dot notation) and again alias this under the shorthand *plt*. Finally, the iPython magic command **% matplotlib inline** makes these graphs appear within our jupyter notebook.
+There are a number of other packages you can also check out for visualization later on such as plotly, folium, and bokeh to name a few, but matplotlib is an industry standard used widely. As with the pandas package, we must import  the matplotlib package to use its built in functions and methods. Rather then import the entire package however, we import only the piece we intend to use (hence the dot notation) and again alias this under the shorthand *plt*. Finally, the Jupyter magic command **% matplotlib inline** makes these graphs appear within our jupyter notebook.
 
 
 ```python
