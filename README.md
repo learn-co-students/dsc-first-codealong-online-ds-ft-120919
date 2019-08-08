@@ -250,21 +250,14 @@ df.piece_count.
 ```
 
 ## Common Series Methods
-Some very useful series methods include:  
-* df.col_name.value_counts()
-* df.col_name.astype()
-* series.mean()     #Changing notation here: series refers to df.col_name (which is a series)!
+Some very useful series methods include those for obtaining basic summary statistics:  
+* series.mean()
 * series.median()
 * series.min()
 * series.max()
-* series.std()
-* series.unique()
-* series.nunique()
-* series.sample()
-* series.sort_values()
 
 There are also many more but this is a very good starting point.
-Start pulling up some docstrings (using shift+tab within parentheses!) and getting acquainted with reading them yourself before we go through a few of these methods together.
+Start pulling up some docstrings (using shift+tab within parentheses!) and getting acquainted with reading them yourself before we go through a few of these methods together. You can also consult the [documentation.](https://pandas.pydata.org/pandas-docs/stable/reference/series.html)
 
 
 ```python
@@ -306,17 +299,16 @@ The graph above is a good start, but we should be sure to add some labels! To do
 * plt.title()
 * plt.xlabel()
 * plt.ylabel()
-* plt.legend()
-* plt.xticks()
-* plt.yticks()
+
+As you might imagine, these methods allow you to add a title and labels to the X and Y axes. 
 
 
 ```python
 to_graph = df.theme_name.value_counts()[:5]
 to_graph.plot(kind='barh') #lots of other optional parameters can be passed such as color
-plt.title('Top 5 Lego Themes', fontsize=16) #fontsize is optional
+plt.title('Top 5 Lego Themes', fontsize=16) #add a title and adjust font size (optional)
 plt.xlabel('Number of Lego Sets') #you could also pass in fontsize if you wanted here
-plt.ylabel('Theme') #you could also rotate text if you wanted
+plt.ylabel('Theme')
 ```
 
 ## Practice and Explore
