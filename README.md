@@ -44,6 +44,11 @@ You might have started to notice that the code blocks have little notes that say
 You may also notice that other cell blocks, such as this one, do not have the **In [ ]:** label as with the code blocks. This is because this cell block is formatted as **Markdown** rather then code. The details of Markdown are not important here but just know you can use markdown cell blocks to display text. They are really useful for embedding notes and explanations in your Jupyter Notebook. You can see (and change) what type of cell is by clicking the dropdown menu at the top:
 <img src="images/jupyter_notebook_cell_type_dropdown.png" width="750">
 
+
+```python
+
+```
+
 ## Command Versus Edit Mode
 
 You should also start to notice that when you are in a cell writing code (or notes), the cell is highlighted in **green** meaning you are in **edit mode**. 
@@ -92,7 +97,7 @@ df.head() #Uses a built in method common to all Pandas Dataframes
 
 Note the green text following the **#**.  
 Anything following a **#** in python is a comment and will not actually execute.  
-This is a useful feature for annotating your code with notes for yourself and other later so that your code is easy to read.
+This is a useful feature for annotating your code with notes for yourself and others so that your code is easy to read.
 
 ## Accessing Methods from Packages and Objects
 
