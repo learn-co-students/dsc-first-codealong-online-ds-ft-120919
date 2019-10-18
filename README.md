@@ -11,7 +11,8 @@ Just take your time to explore the data and the code!
 
 ## Objectives
 You will be able to:
-* Code along (following detailed instructions) to import a csv file and then plot the data
+* Perform cell operations within Jupyter Notebooks
+* Use import statements to import and alias Python modules
 
 ## Jupyter Notebook and Running Cells
 
@@ -41,8 +42,13 @@ import matplotlib.pyplot as plt
 
 You might have started to notice that the code blocks have little notes that say **In [ ]:** before you run them, and then are filled with a number after you run them. This is important, as it tells you in what order the cell blocks were run. (Which can affect how a program runs.)
 
-You may also notice that other cell blocks, such as this one, do not have the **In [ ]:** label as with the code blocks. This is because this cell block is formatted as **Markdown** rather than code. The details of Markdown are not important here but just know you can use markdown cell blocks to display text. They are really useful for embedding notes and explanations in your Jupyter Notebook. You can see (and change) what type of cell is by clicking the dropdown menu at the top:
+You may also notice that other cell blocks, such as this one, do not have the **In [ ]:** label as with the code blocks. This is because this cell block is formatted as **Markdown** rather than code. The details of Markdown are not important here but just know you can use Markdown cell blocks to display text. They are really useful for embedding notes and explanations in your Jupyter Notebook. You can see (and change) what type of cell is by clicking the dropdown menu at the top:
 <img src="images/jupyter_notebook_cell_type_dropdown.png" width="750">
+
+
+```python
+
+```
 
 ## Command Versus Edit Mode
 
@@ -322,4 +328,4 @@ df.play_star_rating.hist()
 
 ## Summary
 
-Congratulations, you made it through your first real Data Science workflow!
+Congratulations, you got some practice executing cell operations within Jupyter Notebooks and learned how to import Python packages. You also worked through your first real Data Science workflow!
