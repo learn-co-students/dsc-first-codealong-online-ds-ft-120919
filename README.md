@@ -45,6 +45,11 @@ You might have started to notice that the code blocks have little notes that say
 You may also notice that other cell blocks, such as this one, do not have the **In [ ]:** label as with the code blocks. This is because this cell block is formatted as **Markdown** rather than code. The details of Markdown are not important here but just know you can use Markdown cell blocks to display text. They are really useful for embedding notes and explanations in your Jupyter Notebook. You can see (and change) what type of cell is by clicking the dropdown menu at the top:
 <img src="images/jupyter_notebook_cell_type_dropdown.png" width="750">
 
+
+```python
+
+```
+
 ## Command Versus Edit Mode
 
 You should also start to notice that when you are in a cell writing code (or notes), the cell is highlighted in **green** meaning you are in **edit mode**. 
@@ -57,15 +62,19 @@ To enter edit mode from command mode simply hit enter, or double click on a cell
 
 ### Command Mode
 In command mode, you can delete cells, add cells, copy cells, paste cells, change cell types, and more. You can also do these tasks in a more cumbersome (and time consuming) manner by using the various headers in the menu bar at top.
+
 <img src="images/jupyter_menu.png" width="800">
+
+
 You can also see a full list of shortcuts available in command and edit mode under the help menu.
 
 <img src="images/jupyter_help_menu.png" width="800">
 
 ## Running Bash Commands
 
-We can also run bash commands just as we did before from the terminal directly within Jupyter Notebooks!  
- (Note: bash commands cannot be mixed with Python and must be in their own cell block.)   
+We can also run bash commands just as we did before from the terminal directly within Jupyter Notebooks! 
+
+(Note: bash commands cannot be mixed with Python and must be in their own cell block.)   
  
 Try it out!
 
@@ -91,9 +100,9 @@ df.head() #Uses a built in method common to all Pandas Dataframes
 
 ## Python Comments
 
-Note the green text following the pound sign **#**.  
-Anything following a **#** in Python is a comment and will *not* get executed.  
-This is a useful feature for annotating your code with notes for yourself and others so that your code is easy to read.
+Note the green text following the pound sign `#`.  
+
+Anything following a `#` in Python is a comment and will *not* get executed. This is a useful feature for annotating your code with notes for yourself and others so that your code is easy to read.
 
 ## Accessing Methods from Packages and Objects
 
@@ -101,7 +110,7 @@ A little more theory and context:
 
 When we loaded in packages in our first cell block (using the `import` commands), we loaded code into memory. That code included functions, variables, and other objects. Collectively, all of these items are loaded under the package name or alias.  
 
-We demonstrated this when we used the **pd.read_csv()** method above.  
+We demonstrated this when we used the `pd.read_csv()` method above.  
 
 This also demonstrates the **dot notation** in Python, which is how we access built in methods or attributes of a given object. Similar to what we saw with bash in the command line, we can also use **tab completion** to preview methods available in packages or other objects.  
 
@@ -122,11 +131,9 @@ You can also start typing to subset the list of available commands:
 
 ## Pulling up Docstrings
 
-Even better, you can even see how a method works by pulling up its **docstring**!  
-You can do this by writing **?** after the method and running the cell.
+Even better, you can even see how a method works by pulling up its **docstring**! You can do this by writing `?` after the method and running the cell.
 
-<img src="images/docstring.png" width="800"> 
-
+<img src="images/docstring.png" width="800">
 
 Try it out!
 
@@ -136,6 +143,7 @@ pd.read_csv?
 ```
 
 Alternatively, you can pull up a preview of the docstring by pressing **shift+tab within the parentheses of a method**
+
 <img src="images/docstring_preview.png" width="800">
 
 
@@ -148,25 +156,25 @@ pd.read_csv() #Move your cursor inside the parentheses and press shift+tab
 The other thing that happened in our block of code above was that we defined a **variable**.  
 
 This happened in this line of code:  
-```df = pd.read_csv('lego_sets.csv')```
+> ```df = pd.read_csv('lego_sets.csv')```
 
-As we saw, we used the built in *read_csv* method from the *pandas* package which we imported under the *alias* *pd*. 
+As we saw, we used the built in `read_csv` method from the *pandas* package which we imported under the *alias* `pd`. 
 
-The output of this method was then assigned to the variable *df*. This is the standard syntax for declaring any variable. You do not have to specify variable types, as in many other programming languages. Simply:  
+The output of this method was then assigned to the variable `df`. This is the standard syntax for declaring any variable. You do not have to specify variable types, as in many other programming languages. Simply:  
 
-`variable_name = what_to_store_in_the_variable`
+> `variable_name = what_to_store_in_the_variable`
 
 ## Built-in Python Functions
 
 We also used two built in Python functions:  
-    * `len()` #Returns the lenght of an object
-    * `print()` #Prints stuff!
-In general, **Python has reserved keywords** for built in functions like this. 
-**Be sure to not name your variables any of these!**
+- `len() #Returns the length of an object`
+- `print() #Prints stuff!`
+
+In general, **Python has reserved keywords** for built in functions like this. **Be sure to not name your variables any of these!**
 
 <img src="images/python_built_in_functions.png" width="700">
 
-You can also check what type of object something is using the built in **type()** method. This can be useful when determining how to work with an object that you are unfamiliar with.
+You can also check what type of object something is using the built in `type()` method. This can be useful when determining how to work with an object that you are unfamiliar with.
 
 
 ```python
@@ -174,15 +182,16 @@ type(df)
 ```
 
 ## Common DataFrame Methods
-As you can see, the variable **df** is a DataFrame object (which is part of the Pandas core package). Here's some other common methods you will want to become familiar with when working with Pandas dataframes:  
-* `df.head()` 
-    * Preview the first 5 rows of a dataframe. Pass a number for more/less rows
-* `df.tail(10)` 
-    * Preview last 10 rows (default 5 if no number given)
-* `df.info()`  
-    * Returns column names and details about each column
-* `df.columns`  
-    * Return column names. Note that there is no parentheses for this. This is becuase this is an attribute as opposed to a method
+As you can see, the variable `df` is a DataFrame object (which is part of the Pandas core package). Here's some other common methods you will want to become familiar with when working with Pandas dataframes:  
+
+- `df.head()` 
+    - Preview the first 5 rows of a dataframe. Pass a number for more/less rows
+- `df.tail(10)` 
+    - Preview last 10 rows (default 5 if no number given)
+- `df.info()`  
+    - Return column names and details about each column
+- `df.columns`  
+    - Return column names. Note that there is no parentheses for this. That's because the column names by themselves are an **attribute** of the dataframe, **not a method** called on the dataframe!
 
 
 ```python
@@ -235,7 +244,7 @@ The syntax for a slice is `[start:end]`.
 
 You can also pass an additional third parameter `[start:end:count_by]` which will allow you to:  
 count every other: `[start:end:2]`  
-count backwards: `start:end:-1]`  
+count backwards: `[start:end:-1]`  
 or potentially much more cryptic patterns, depending on what you pass.  
 
 While we could have also used `df.State.head()`, slicing works for many more datatypes. This includes the previously mentioned *strings* as well as **lists** and other iterable objects. **Series**, the columns of the pandas DataFrame, are similar to Python's built in *lists*, but also have additional *methods* built in to them that we will continue to investigate.
@@ -268,7 +277,7 @@ df.play_star_rating.value_counts() #Read the docstring and tinker! See how it wo
 ## Graphing
 
 Our bread and butter tool for graphing in Python will be **matplotlib**. 
-There are a number of other packages you can also check out for visualization later on such as plotly, folium, and bokeh to name a few, but matplotlib is an industry standard used widely. As with the pandas package, we must import  the matplotlib package to use its built in functions and methods. Rather then import the entire package however, we import only the piece we intend to use (hence the dot notation) and again alias this under the shorthand *plt*. Finally, the Jupyter magic command **% matplotlib inline** makes these graphs appear within our jupyter notebook.
+There are a number of other packages you can also check out for visualization later on such as plotly, folium, and bokeh to name a few, but matplotlib is an industry standard used widely. As with the pandas package, we must import  the matplotlib package to use its built in functions and methods. Rather then import the entire package however, we import only the piece we intend to use (hence the dot notation) and again alias this under the shorthand `plt`. Finally, the Jupyter magic command `% matplotlib inline` makes these graphs appear within our jupyter notebook.
 
 
 ```python
